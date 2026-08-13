@@ -12,11 +12,8 @@ app.use(cors());
 app.use(express.json());
 
 const pool = new Pool({
-    user: process.env.DB_USER || 'postgres',
-    host: process.env.DB_HOST || 'localhost',
-    database: process.env.DB_NAME || 'elite_dev_tickets',
-    password: process.env.DB_PASSWORD,
-    port: process.env.DB_PORT || 5432,
+  connectionString: process.env.DATABASE_URL || `postgresql://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
+    ssl: process.env.DATABASE_URL ? { rejectUnauthorized: false } : false
 });
 
 const SECRET_KEY = process.env.SECRET_KEY || 'chave_super_secreta_jwt';
