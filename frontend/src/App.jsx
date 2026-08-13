@@ -5,7 +5,7 @@ import EventoDetalhe from './pages/EventoDetalhe.jsx/index.js';
 import MeusIngressos from './pages/MeusIngressos.jsx';
 import Portaria from './pages/Portaria.jsx';
 import Organizador from './pages/Organizador.jsx';
-import Header from './components/tHeader.jsx'; 
+import Header from './components/Header.jsx'; 
 
 const RotaProtegida = ({ children, roleRequerida }) => {
   const token = localStorage.getItem('@EliteTickets:token');
