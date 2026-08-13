@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login.jsx';
-import Eventos from './pages/Eventos.jsx/index.js';
+import Eventos from './pages/Eventos.jsx';
 import EventoDetalhe from './pages/EventoDetalhe.jsx';
 import MeusIngressos from './pages/MeusIngressos.jsx';
 import Portaria from './pages/Portaria.jsx';
