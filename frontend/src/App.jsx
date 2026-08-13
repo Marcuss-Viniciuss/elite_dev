@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './pages/Login';
-import Eventos from './pages/Eventos';
-import EventoDetalhe from './pages/EventoDetalhe';
-import MeusIngressos from './pages/MeusIngressos';
-import Portaria from './pages/Portaria';
-import Organizador from './pages/Organizador';
-import Header from './components/Header'; 
+import Login from './pages/tLogin.jsx';
+import Eventos from './pages/tEventos.jsx/index.js';
+import EventoDetalhe from './pages/tEventoDetalhe.jsx/index.js';
+import MeusIngressos from './pages/tMeusIngressos.jsx';
+import Portaria from './pages/tportaria.jsx';
+import Organizador from './pages/torganizador.jsx';
+import Header from './components/Header.jsx'; 
 
 const RotaProtegida = ({ children, roleRequerida }) => {
   const token = localStorage.getItem('@EliteTickets:token');
