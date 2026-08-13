@@ -1,0 +1,124 @@
+.ingressos-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #e4e4e7;
+}
+
+.ingressos-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #27272a;
+  padding-bottom: 1rem;
+}
+
+.ingressos-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.lista-ingressos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.ingresso-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .ingresso-card {
+    flex-direction: row;
+  }
+}
+
+.ingresso-info {
+  flex-grow: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ingresso-status {
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.status-paid {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.status-used {
+  background-color: rgba(161, 161, 170, 0.1);
+  color: #a1a1aa;
+  border: 1px solid rgba(161, 161, 170, 0.2);
+}
+
+.ingresso-info h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.ingresso-detalhes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+
+.ingresso-qr-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #09090b;
+  padding: 1.5rem;
+  border-top: 1px dashed #3f3f46;
+}
+
+@media (min-width: 640px) {
+  .ingresso-qr-section {
+    border-top: none;
+    border-left: 1px dashed #3f3f46;
+    min-width: 200px;
+  }
+}
+
+.qr-code-wrapper {
+  background-color: #ffffff; 
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.qr-token-text {
+  font-size: 0.7rem;
+  color: #71717a;
+  word-break: break-all;
+  text-align: center;
+  max-width: 150px;
+}
