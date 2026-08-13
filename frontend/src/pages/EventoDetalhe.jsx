@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Calendar, MapPin, Building, Ticket } from 'lucide-react';
 import api from '../services/api';
-import './SSSSSSSS.JS';
+import './EventoDetalhe';
 
 export default function EventoDetalhe() {
   const { id } = useParams();
